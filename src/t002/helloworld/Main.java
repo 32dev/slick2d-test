@@ -1,4 +1,4 @@
-package t0002.helloworld;
+package t002.helloworld;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
 import org.newdawn.slick.GameContainer;

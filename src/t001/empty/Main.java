@@ -1,4 +1,4 @@
-package t0001.empty;
+package t001.empty;
  import java.util.logging.Level;
 import java.util.logging.Logger;
 
