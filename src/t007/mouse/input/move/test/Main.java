@@ -1,4 +1,4 @@
-package t006.key.input.move.test;
+package t007.mouse.input.move.test;
 
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
@@ -18,7 +18,7 @@ class Square {
 
 	}
 
-	public void move(Graphics g) {
+	public void render(Graphics g) {
 		g.setColor(Color.white);
 		g.fillRect(this.x, this.y, 100, 100);
 	}
@@ -48,29 +48,17 @@ public class Main extends BasicGame {
 
 	@Override
 	public void render(GameContainer gc, Graphics g) throws SlickException {
-		square.move(g);
+		square.render(g);
 	}
 
 	@Override
 	public void update(GameContainer gc, int delta) throws SlickException {
 		Input input = gc.getInput();
-		float speed = 0.5f;
-		// 오른쪽 이동
-		if (input.isKeyDown(Input.KEY_RIGHT)) {
-			square.x += speed * delta;
-		}
-		// 왼쪽 이동
-		if (input.isKeyDown(Input.KEY_LEFT)) {
-			square.x -= speed * delta;
-		}
-		// 위
-		if (input.isKeyDown(Input.KEY_UP)) {
-			square.y -= speed * delta;
-		}
-		// 아래
-		if (input.isKeyDown(Input.KEY_DOWN)) {
-			square.y += speed * delta;
-		}
+		int xpos = input.getMouseX();
+		int ypos = input.getMouseY();
+		square.x = xpos - 50;
+		square.y = ypos - 50;
+
 	}
 
 	public static void main(String[] args) {
