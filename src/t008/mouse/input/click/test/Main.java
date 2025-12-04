@@ -74,8 +74,8 @@ public class Main extends BasicGame {
 	public static void main(String[] args) {
 		try {
 			AppGameContainer app = new AppGameContainer(new Main("Rectangle Falling"));
-			app.setDisplayMode(1000, 1000, false);
-			app.setTargetFrameRate(60);
+			app.setDisplayMode(720, 1280, false);
+			app.setTargetFrameRate(59);
 			app.start();
 		} catch (SlickException e) {
 			e.printStackTrace();

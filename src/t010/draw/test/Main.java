@@ -33,7 +33,7 @@ public class Main extends BasicGame {
     // 현재 그리고 있는 스트로크 (마우스를 누르고 있는 동안)
     private List<Point> currentStroke = null;
     
-    private final Color drawColor = Color.blue;
+    private final Color drawColor = Color.white;
     private final float lineWidth = 5f;
 
     public Main(String title) {
@@ -135,7 +135,7 @@ public class Main extends BasicGame {
         try {
             // 애플리케이션 타이틀 변경
             AppGameContainer app = new AppGameContainer(new Main("Slick2D Pen Drawing"));
-            app.setDisplayMode(1000, 1000, false);
+            app.setDisplayMode(720, 1280, false);
             app.setTargetFrameRate(60); // 프레임 속도 설정
             app.start();
         } catch (SlickException e) {
