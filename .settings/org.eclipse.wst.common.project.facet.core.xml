@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faceted-project>
-  <runtime name="jdk-25.0.0.36-hotspot"/>
-  <installed facet="java" version="25"/>
+  <runtime name="jdk-17.0.17.10-hotspot"/>
+  <installed facet="java" version="17"/>
 </faceted-project>
